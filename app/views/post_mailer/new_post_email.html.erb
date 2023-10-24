@@ -1,5 +1,7 @@
 <h1>Post#new_post_email</h1>
 
 <p>
-  <%= @greeting %>, find me in app/views/post_mailer/new_post_email.html.erb
+  Hello, <strong><%= @user.email %></strong>
 </p>
+
+<%= link_to 'Show post', post_url(@post, host: 'localhost:3000') %>
